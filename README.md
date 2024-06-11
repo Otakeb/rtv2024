@@ -3,7 +3,7 @@ FORK OF RTV TO FIX "ValueError: could not convert string to float: 'X, X' "
 
 
 
-**THIS PROJECT IS NO LONGER MAINTAINED**
+**THIS PROJECT IS PROBABLY NOT MAINTAINED** (I just forked to fix one issue and don't really understand the project enough to maintain...probably...but I will try to fix issues if they occur for me on my machine and update here for anyone interested.
 
 - [RTV Development is Shutting Down](https://github.com/michael-lazar/rtv/issues/696)
 - [List of Alternative Projects](https://gist.github.com/michael-lazar/8c31b9f637c3b9d7fbdcbb0eebcf2b0a)
