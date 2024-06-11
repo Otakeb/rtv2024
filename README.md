@@ -1,3 +1,8 @@
+FORK OF RTV TO FIX "ValueError: could not convert string to float: 'X, X' "
+
+
+
+
 **THIS PROJECT IS NO LONGER MAINTAINED**
 
 - [RTV Development is Shutting Down](https://github.com/michael-lazar/rtv/issues/696)
@@ -30,48 +35,12 @@ A text-based interface (TUI) to view and interact with Reddit from your terminal
 <img alt="title image" src="resources/demo.gif"/>
 </p>
 
-You can use *telnet* or *ssh* to try out a lite version of RTV directly in your terminal, without needing to install it:
-
-- ``$ telnet redditbox.us``
-- ``$ ssh redditbox.us``
-
-*[redditbox.us](https://redditbox.us/) is an independent project by Alex Jarmoszuk*
-
 ## Installation
-
-### PyPI package
-
-RTV is available on [PyPI](https://pypi.python.org/pypi/rtv/) and can be installed with pip:
-
-```bash
-$ pip install rtv
-```
-
-### Native packages
-
-See [Repology](https://repology.org/metapackage/rtv/packages) for an up-to-date list of supported distro packages:
-
-```bash
-# macOS
-$ brew install rtv
-
-# Arch
-$ pacman -S rtv
-
-# Nix
-$ nix-env -i rtv
-
-# Debian
-$ apt install rtv
-
-# FreeBSD
-$ pkg install rtv
-```
 
 ### From source
 
 ```bash
-$ git clone https://github.com/michael-lazar/rtv.git
+$ git clone https://github.com/Otakeb/rtv2024.git
 $ cd rtv
 $ python setup.py install
 ```
