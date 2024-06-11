@@ -1092,9 +1092,10 @@ class RequestHeaderRateLimiter(DefaultHandler):
             # which Reddit doesn't appear to care about rate limiting.
             return
 
-        self.used = float(response_headers['x-ratelimit-used'])
-        self.remaining = float(response_headers['x-ratelimit-remaining'])
-        self.seconds_to_reset = int(response_headers['x-ratelimit-reset'])
+        # CHANGED x-ratelimit-XXXXX to grab first index in the pair to fix float conversion
+        self.used = float(response_headers['x-ratelimit-used'][0])
+        self.remaining = float(response_headers['x-ratelimit-remaining'][0])
+        self.seconds_to_reset = int(response_headers['x-ratelimit-reset'][0])
         _logger.debug('Rate limit: %s used, %s remaining, %s reset',
                       self.used, self.remaining, self.seconds_to_reset)
 
